@@ -38,7 +38,7 @@ export default function StoreProfilePage() {
     setMsg(res.success ? "Store profile updated!" : res.error);
   };
 
-  if (!user.id || user.role_id != 2)
+  if (!user.id || user.role_id !== 2)
     return <div>Access Denied. Vendors only.</div>;
 
   return (
